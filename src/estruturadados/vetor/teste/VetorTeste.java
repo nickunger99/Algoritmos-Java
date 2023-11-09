@@ -18,5 +18,7 @@ public class VetorTeste {
         System.out.println(vetor);
 
         System.out.println(vetor.busca(5));
+
+        System.out.println(vetor.busca("elemento 1"));
     }
 }
