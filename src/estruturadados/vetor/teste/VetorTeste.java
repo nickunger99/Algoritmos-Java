@@ -22,7 +22,7 @@ public class VetorTeste {
 
         System.out.println(vetor.busca("elemento 1"));
         
-        Vetor vetor2 = new Vetor(10);
+        Vetor vetor2 = new Vetor(3);
         
         vetor2.adiciona("B");
         vetor2.adiciona("C");
