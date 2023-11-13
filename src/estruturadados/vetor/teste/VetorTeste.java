@@ -4,6 +4,8 @@ import estruturadados.vetor.Lista;
 import estruturadados.vetor.Vetor;
 import estruturadados.vetor.VetorObjetos;
 
+import java.util.ArrayList;
+
 public class VetorTeste {
     public static void main(String[] args) {
         Vetor vetor = new Vetor(20);
@@ -82,5 +84,43 @@ public class VetorTeste {
         Lista<Contato> lista = new Lista<Contato>(1);
 
         lista.adiciona(c1);
+
+        System.out.println("---------------------");
+        System.out.println("ArrayList");
+
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        arrayList.add("A");
+        arrayList.add("C");
+
+        System.out.println(arrayList);
+
+        arrayList.add(1, "B");
+
+        System.out.println(arrayList);
+
+        boolean existe = arrayList.contains("A");
+        if (existe) {
+            System.out.println("Existe no array");
+        } else {
+            System.out.println("Não existe no array");
+        }
+
+        int pos2 = arrayList.indexOf("B");
+        if (pos2 > -1) {
+            System.out.println("Existe no array na pos " + pos2);
+        } else {
+            System.out.println("Não existe no array" + pos2);
+        }
+
+        System.out.println(arrayList.get(1));
+
+        arrayList.remove(1);
+        arrayList.remove("A");
+        System.out.println(arrayList);
+
+        System.out.println(arrayList.size());
+
+
     }
 }
