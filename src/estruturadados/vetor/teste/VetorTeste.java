@@ -1,5 +1,6 @@
 package estruturadados.vetor.teste;
 
+import estruturadados.vetor.Lista;
 import estruturadados.vetor.Vetor;
 import estruturadados.vetor.VetorObjetos;
 
@@ -65,5 +66,21 @@ public class VetorTeste {
         }
 
         System.out.println(vetorObjetos);
+
+
+        VetorObjetos vetorObjetos2 = new VetorObjetos(3);
+
+        vetorObjetos2.adiciona(1);
+        vetorObjetos2.adiciona("Elemento tipo String");
+
+        System.out.println(vetorObjetos2);
+
+
+        System.out.println("---------------------");
+        System.out.println("Lista");
+
+        Lista<Contato> lista = new Lista<Contato>(1);
+
+        lista.adiciona(c1);
     }
 }
